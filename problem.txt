@@ -4,3 +4,20 @@
 # >> input number2: 12
 # >> input number3: 9
 # 12
+
+#ssungs solved
+#minsoo this file is .txt i want .py file. cuz can not test code.
+
+#1
+
+input_number = [input('number1: '), input('number2: '), input('number3: ')]
+solved = []
+
+for i in range(0, len(input_number)-1):
+    if input_number[i] > input_number[i+1]:
+        solved.append(input_number[i+1])
+    elif input_number[i] < input_number[i+1]:
+        solved.append(input_number[i])
+
+print(list(set(solved)))
+
